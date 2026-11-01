@@ -1,35 +1,82 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Free UUID Generator - v4 UUID Online</title>
-  <meta name="description" content="Free online UUID generator designed with minimal layout." />
-  <link rel="canonical" href="https://freelanceremmy.github.io/uuid/" />
-  <link rel="stylesheet" href="uuid-website.css" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>UUID Generator</title>
+
+    <meta
+      name="description"
+      content="A free, fast UUID generator. Create a random version 4 UUID in one tap and copy it instantly. Works offline-friendly on any device."
+    />
+    <meta name="author" content="freelancerEmmy" />
+    <meta name="robots" content="index, follow" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#000000"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="canonical" href="https://freelanceremmy.github.io/uuid/" />
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="UUID Generator" />
+    <meta
+      property="og:description"
+      content="Generate a random UUID in one tap and copy it instantly."
+    />
+    <meta property="og:url" content="https://freelanceremmy.github.io/uuid/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="UUID Generator" />
+    <meta
+      name="twitter:description"
+      content="Generate a random UUID in one tap and copy it instantly."
+    />
+
+    <!-- Black and white favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='700' text-anchor='middle' fill='%23fff'%3EID%3C/text%3E%3C/svg%3E"
+    />
+
+    <link rel="stylesheet" href="uuid-website (1).css" />
   </head>
 
   <body>
-    <header><h1>UUID GENERATOR</h1></header>
-    <div class="header">
-      <div class="wrapper">
-        <div class="nested-wrapper">
-          <p><b>Your generated UUID:</b></p>
-          <div id="uuidResult" class="result"></div>
-          <span id="copyBtn"> &#x29C9; Copy </span>
+    <header class="site-header">
+      <h1>UUID Generator</h1>
+    </header>
+
+    <main class="main">
+      <section class="card" aria-labelledby="uuidLabel">
+        <p class="label" id="uuidLabel">Your Online generated UUID</p>
+
+        <output id="uuidResult" class="result" aria-live="polite"></output>
+
+        <div class="actions">
+          <button id="copyBtn" type="button" class="btn btn-solid">Copy</button>
+          <button id="generateBtn" type="button" class="btn btn-outline">
+            Generate new
+          </button>
         </div>
+      </section>
+    </main>
 
-        <span class="info">
-          <a id="generateBtn" onclick"location.reload()" >Refresh</a> page to load a new UUID
-        </span>
-        <!--<button id="generateBtn">Generate UUID</button>-->
-      </div>
-    </div>
-
-    <footer class="footer">
-      Made with ❤️ by
-      <a href="https://github.com/freelanceremmy">freelancerEmmy</a>
+    <footer class="site-footer">
+      Made with <span aria-label="love">&hearts;&#xFE0E;</span> by
+      <a href="https://freelanceremmy.github.io">freelancerEmmy</a>
     </footer>
-    <script src="uuid-website.js"></script>
+
+    <script src="uuid-website.js" defer></script>
   </body>
-</html>
+      </html>
+  
